@@ -1,8 +1,8 @@
-import React  from 'react';
+import React,{useState}  from 'react';
 
 const useDropdown = (label, defaultState, options) => {
-    const [state,setState] = useState(defaultState)
-    const id = `use-dropdow-${label.replace(" ","").tolowerCase()}`
+    const [state,setState] = useState(defaultState);
+    const id = `use-dropdow-${label.replace(" ","").toLowerCase()}`
     const Dropdown =()=> (
         <label htmlFor={id}>
             {label}
